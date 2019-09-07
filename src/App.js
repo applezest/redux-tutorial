@@ -21,7 +21,7 @@ const mapStateToProps = (state) => ({
   user: state.user
 })
 
-// action을 dispatch하는 펑션을 props로 mapping
+// action을 dispatch하는 펑션을 props로 mapping (자식이 부모와 통신)
 const mapActionToProps = (dispatch) => ({
   // 왼쪽은 props, 오른쪽은 action
   updateUser: (name) => dispatch(updateUser(name))
